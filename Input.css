@@ -193,12 +193,27 @@ input[type=email]:valid{
 input[type=email]:placeholder-shown:valid {
     outline: 1px solid #DBA901;
   }
-#Emoji1, #Emoji2{
+#Emoji1{
     display: none;
+}
+#Emoji2{
+    display: none;
+}
+#Emoji3{
+    display: none;
+}
+input[type=email]:valid+.warning .Emoji #Emoji2{
+    display: block;
 }
 input[type=email]:valid+.warning .Emoji #Emoji2{
     display: block;
 }
 input[type=email]:invalid+.warning .Emoji #Emoji1{
     display: block;
+}
+input[type=email]:placeholder-shown+.warning .Emoji #Emoji3{
+    display: block;
+}
+input[type=email]:placeholder-shown+.warning .Emoji #Emoji2{
+    display: none;
 }
