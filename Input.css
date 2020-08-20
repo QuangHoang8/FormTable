@@ -1,0 +1,204 @@
+body>div{
+    max-width: 1024px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+div>img{
+    width: 500px;
+    margin-top: 150px;
+    
+}
+a{
+    text-decoration: none;
+}
+form{
+    display: inline-flex;
+}
+.register{
+    width: 400px;
+    /* height: 500px; */
+    margin-top:30px;
+    margin-left: 80px;
+    border-radius: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    box-shadow: 10px 10px #E6E6E6;
+}
+.title{
+    margin-left: 10px;
+}
+.title p{
+    color: gray;
+}
+.label-item{
+    display: inline-flex;
+}
+.name{
+    display: flex;
+    justify-content: space-around;  
+}
+.name-item input{
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 8%;
+    border-width: 1px;
+    border-color: gray;
+    background-color: #F2F2F2;
+}
+.phone-pass{
+    width: 380px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 8%;
+    border-width: 1px;
+    border-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #F2F2F2;
+}
+.block-check{
+    margin-top: 15px;
+}
+.label-item{
+    margin-left: 10px;
+}
+.label-item+div{
+    margin-top:10px;
+}
+select{
+    border-radius: 8%;
+    border-width: 1px;
+    border-color: gray;
+    width: 116px;
+    height: 40px;
+    margin-left: 10px;
+}
+/* input{
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 8%;
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+.TOMAU{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray ;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    margin-top:4px;
+    margin-left: 3px;
+}
+.block-gt{
+    display: flex;
+}
+.block-gt-item{
+    display: flex;
+    height: 40px;
+    border-radius: 10%;
+    border-style:solid;
+    border-width: 0.2px;
+    border-color: gray;
+    margin-left: 10px;
+}
+.block-gt-item div{
+    margin-top:auto;
+    margin-bottom:auto;
+
+}
+.block-gt-item .radio{
+    margin-left: 58px;  
+}
+.button{
+    margin-top: 30px;
+    margin-left: 100px;
+    
+}
+button{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8%;
+    font-weight: bold;
+    background-color: #31B404;
+    color: white
+}
+.checkbox {
+    width: 100px;
+    height: 10px;
+    background: wheat;
+    margin: 20px 10px;
+    border-radius: 50px;
+    
+    position: relative;
+}
+
+.checkbox label {
+    display: block;
+    width: 40px;
+    height: 15px;
+    border-radius: 50px;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    z-index: 1;
+    
+    background: #ddd;
+}
+.warning{
+    display: flex;
+}
+.emoji{
+    display: flex;
+    margin-top:10px;
+    
+}
+
+input[type=number]:focus+.checkbox input[type=checkbox]+label {
+    left: 60px;
+    background: #26ca28;
+}
+
+input[type=number]:not(:focus)+.checkbox input[type=checkbox]+label {
+    left: 0px;
+    background: red;
+}
+input[type=email]:focus+.warning .checkbox input[type=checkbox]+label {
+    left: 60px;
+    background: #26ca28;
+}
+
+input[type=email]:not(:focus)+.warning .checkbox input[type=checkbox]+label {
+    left: 0px;
+    background: red;
+}
+#checkboxInput{
+    display: none;
+}
+input[type=email]:invalid{
+    outline-color: red;
+    outline-width: 3px;
+    outline-style: solid;
+    
+}
+input[type=email]:valid{
+    outline-color: blue;
+}
+input[type=email]:placeholder-shown:valid {
+    outline: 1px solid #DBA901;
+  }
+#Emoji1, #Emoji2{
+    display: none;
+}
+input[type=email]:valid+.warning .Emoji #Emoji2{
+    display: block;
+}
+input[type=email]:invalid+.warning .Emoji #Emoji1{
+    display: block;
+}

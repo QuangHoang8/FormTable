@@ -1,0 +1,305 @@
+*{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo{
+    display: inline-flex;
+}
+.MenuHead{
+    display: flex;
+    background-color: whitesmoke;
+}
+.input-search, .MenuHead-item{
+    margin-top: 25px;
+    margin-left: 95px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:red ;
+}
+.MenuHead-item:hover{
+    color: blue;
+}
+.Product{
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    background-color:#99FFCC;
+}
+.Product-item{
+    position: relative;
+}
+.Product-item>ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.Product-item:hover>ul{
+    display: block;
+    background-color: white;
+    z-index: 10;  
+}
+.banner{
+    display: inline-flex;
+}
+.topsale{
+    margin-top: 50;
+    display: flex;
+    justify-content: space-around;
+    border: red;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+}
+.Tieude{
+    margin-top: 100px;
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+}
+.img-dt{
+    padding-top: 10px;
+    transition: 0.5s;
+}
+.img-dt:hover{
+    padding-top: 0px;
+    transition: 0.5s;
+    padding-bottom: 8px;
+}   
+.Menu-topsale:hover+.ProductName{
+    color: blue;
+} 
+.ProductName{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+.snip1325 {
+    position: relative;
+    overflow: hidden;
+    min-width: 255px;
+    max-width: 315px;
+    height: 50%;
+    width: 100%;
+  }
+  .snip1325 img {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+  }
+  .snip1325:hover img,
+  .snip1325.hover img {
+    -webkit-transform: translateX(130px);
+    transform: translateX(130px);
+  }
+  .Tablet-topsale{
+    width: 250px;
+	overflow: hidden;
+	position: relative; 
+  }
+  .Tablet-topsale img{
+    width: 100%;
+    transition: 1s;
+  }
+  .Tablet-topsale:hover img{
+  transform: scale(1.5);
+  transition: 1s;
+}
+.Tablet-topsale:hover+.ProductName{
+    color: blue;
+}
+table{
+    margin-top:20px;
+}
+    table,
+    td,
+    th {
+        border-bottom: 2px dashed #00FFFF;
+        border-collapse: collapse;
+    }
+
+    tr {
+        width: 200px;
+        height: 80px;
+    }
+
+    th {
+        width: 200px;
+    }
+
+    #my-tri1,
+    #my-tri2,
+    #my-tri3,
+    #my-tri4,
+    #my-tri5,
+    #my-tri6 {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        position: absolute;
+        top: 40%;
+        left: 96%;
+        transform: rotate(90deg);
+    }
+
+    #my-tri1 {
+        border-bottom: 10px solid gray;
+    }
+
+    #my-tri2 {
+        border-bottom: 10px solid #2E2EFE;
+    }
+
+    #my-tri3 {
+        border-bottom: 10px solid #088A4B;
+    }
+
+    #my-tri4 {
+        border-bottom: 10px solid #DBA901;
+    }
+
+    #my-tri5,
+    #my-tri6 {
+        border-bottom: 10px solid #D7DF01;
+        top: 100%;
+        left: 45%;
+        transform: rotate(180deg);
+    }
+
+    #my-tri6 {
+        border-bottom: 10px solid#FA58F4;
+    }
+
+    .block1,
+    .block2,
+    .block3,
+    .block4,
+    .block5,
+    .block6 {
+        height: 40px;
+        width: 200px;
+        position: relative;
+    }
+
+    .block1 {
+        background-color: gray;
+    }
+
+    .block2 {
+        background-color: #2E2EFE;
+    }
+
+    .block3 {
+        background-color: #088A4B;
+    }
+
+    .block4 {
+        background-color: #DBA901;
+    }
+
+    .block5 {
+        background-color: #D7DF01;
+    }
+
+    .block6 {
+        background-color: #FA58F4;
+    }
+
+    p {
+        color: white;
+        text-align: center;
+        padding-top: 7px;
+    }
+
+    caption {
+        font-size: 35px;
+        font-weight: bold;
+        color: #F78181;
+    }
+    .checkboxFour {
+        width: 40px;
+        height: 40px;
+        background: #ddd;
+        margin: 20px 90px;
+        border-radius: 100%;
+        position: relative;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .checkboxFour label {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        transition: all .5s ease;
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 1;
+        background: #333;
+        box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+
+    }
+
+    #checkboxFourInput,
+    #checkboxFourInput1,
+    #checkboxFourInput2,
+    #checkboxFourInput3,
+    #checkboxFourInput4,
+    #checkboxFourInput5,
+    #checkboxFourInput6,
+    #checkboxFourInput7,
+    #checkboxFourInput8,
+    #checkboxFourInput9,
+    #checkboxFourInput10,
+    #checkboxFourInput11,
+    #checkboxFourInput12,
+    #checkboxFourInput13,
+    #checkboxFourInput14,
+    #checkboxFourInput15 {
+        display: none;
+    }
+
+    .checkboxFour input[type=checkbox]:checked+label {
+
+        background: #26ca28;
+
+    }
+    .Contact{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        background-color:whitesmoke;
+        color: #1E90FF;
+    }
+    .Company{
+        margin-top: 10px;
+        display: block;
+        text-align: center;
+    }
+    .Company-name{
+        font-size: smaller;
+        font-style: italic;
+    }
+    .Send{
+        margin-top: 30px;
+        margin-left: 400px;
+        
+    }
+    .Sendtable{
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 8%;
+        font-weight: bold;
+        background-color: #31B404;
+        color: white
+    }
